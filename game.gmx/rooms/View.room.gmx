@@ -18,6 +18,8 @@ init_globals();
 // Initialize terrain
 init_terrain();
 
+// Caleb's first change
+
 game_end();</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
