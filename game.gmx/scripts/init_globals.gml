@@ -12,7 +12,7 @@
 
 // These values may be defined for any map "type".
 // They are defined as negative numbers to avoid conflicts.
-globalvar NAME, XPOS, YPOS, TYPE_ID, DESCRIPTION;
+globalvar NAME, XPOS, YPOS, TYPE_ID, DESCRIPTION, SPD, ACT_PT;
 
 NAME = -1;
 
@@ -21,12 +21,17 @@ YPOS = -3
 
 TYPE_ID = -4;
 
-DESCRIPTION = -5
+DESCRIPTION = -5;
+
+// All actors (not just humanoids) have Speed and Action Points
+SPD = -6;
+ACT_PT = -7;
+ALIVE = -8;
 
 // ********************************** Humanoid ************************************* //
 
 globalvar STR, DEX, END, INT, CHA, PER, STR_MAX, DEX_MAX, END_MAX, INT_MAX, CHA_MAX, PER_MAX,
-        BLOOD, BLOOD_MAX, STAM, STAM_MAX, WEIGHT, NAME;
+        BLOOD, BLOOD_MAX, STAM, STAM_MAX, WEIGHT, NAME; 
 
 STR = 0;
 DEX = 1;

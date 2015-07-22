@@ -18,6 +18,8 @@
         <script>scripts\humanoid_create.gml</script>
         <script>scripts\humanoid_stam_max.gml</script>
       </scripts>
+      <script>scripts\script8.gml</script>
+      <script>scripts\actor_act.gml</script>
     </scripts>
     <scripts name="Random">
       <script>scripts\roll.gml</script>
@@ -41,6 +43,7 @@
     <object>objects\Actor</object>
     <object>objects\Player</object>
     <object>objects\Npc</object>
+    <object>objects\Turn_Controler</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\View</room>

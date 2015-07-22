@@ -12,7 +12,7 @@ for (n = STR_MAX; n <= PER_MAX; n++)
 // Determine starting attribute values
 for (n = STR; n <= PER; n++)
 {
-    p = m[? n-6] / 10; // Starting attributes are partially dependent on max values
+    p = m[? n+6] / 10; // Starting attributes are partially dependent on max values
     m[? n] = p + roll(3, 4);
 }
 
@@ -32,6 +32,10 @@ for (n = 0; n < rank; n++)
         // Each att. has [rank] chances to increase. Higher max att. has higher
         // chance to increase each time.
         if (m[? a+6] > roll(1, 65)) m[? a]++;
+        
+m[? ACT_PT] = 0;
+m[? SPD] = 100;
+m[? ALIVE] = true;
 
 // Placeholder name
 m[? NAME] = "Anonymous";

@@ -10,13 +10,23 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>global.go = false;
-
-// Initialize global IDs
+  <code>// Initialize global IDs
 init_globals();
 
 // Initialize terrain
 init_terrain();
+
+// Create Player
+global.player = humanoid_create(0);
+
+// Create testing arena
+global.level = chunk_create(20, 16);
+
+// Add player to chunk list
+ds_list_add(global.level[? ACTORS], global.player);
+
+// Initialize Controller
+instance_create(0, 0, Turn_Controller);
 
 // Caleb's first change
 
