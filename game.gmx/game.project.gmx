@@ -32,7 +32,6 @@
       </scripts>
     </scripts>
     <scripts name="Init">
-      <script>scripts\init_globals.gml</script>
       <script>scripts\init_terrain.gml</script>
     </scripts>
   </scripts>
