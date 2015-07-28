@@ -2,4 +2,4 @@
 
 m = argument0;
 
-return 50 + 2 * m[? END] + m[? STR] / 2;
+return 50 + 2 * m[? "endurance"] + m[? "strength"] / 2;

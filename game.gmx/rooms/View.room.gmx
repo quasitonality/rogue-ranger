@@ -23,7 +23,7 @@ global.player = humanoid_create(0);
 global.level = chunk_create(20, 16);
 
 // Add player to chunk list
-ds_list_add(global.level[? ACTORS], global.player);
+ds_list_add(global.level[? "actors"], global.player);
 
 // Initialize Controller
 instance_create(0, 0, Turn_Controller);

@@ -6,38 +6,29 @@ rank = argument0;
 m = ds_map_create();
 
 // Determine max (i.e. potential) attribute values
-for (n = STR_MAX; n <= PER_MAX; n++)
-    m[? n] = roll(4, 15) + 8;
+// TODO
 
 // Determine starting attribute values
-for (n = STR; n <= PER; n++)
-{
-    p = m[? n+6] / 10; // Starting attributes are partially dependent on max values
-    m[? n] = p + roll(3, 4);
-}
+// TODO
 
 // Weight is partially dependent on Strength
-m[? WEIGHT] = 50 + m[? STR] + roll(1, m[? STR]) + roll(3, 10);
+m[? "weight"] = 50 + m[? "strength"] + roll(1, m[? "strength"]) + roll(3, 10);
 
 // Blood is partially dependent on Weight
-m[? BLOOD_MAX] = m[? WEIGHT] + 200 + roll(5, 10);
-m[? BLOOD] = m[? BLOOD_MAX];
+m[? "blood_max"] = m[? "weight"] + 200 + roll(5, 10);
+m[? "blood"] = m[? "blood_max"];
 
 // Maximum Stamina is non-randomized secondary stat
-m[? STAM] = humanoid_stam_max(m);
+m[? "stam"] = humanoid_stam_max(m);
 
 // Increase stats by rank
-for (n = 0; n < rank; n++)
-    for (a = STR; a <= PER; a++)
-        // Each att. has [rank] chances to increase. Higher max att. has higher
-        // chance to increase each time.
-        if (m[? a+6] > roll(1, 65)) m[? a]++;
+// TODO
         
-m[? ACT_PT] = 0;
-m[? SPD] = 100;
-m[? ALIVE] = true;
+m[? "action_points"] = 0;
+m[? "speed"] = 100;
+m[? "alive"] = true;
 
 // Placeholder name
-m[? NAME] = "Anonymous";
+m[? "name"] = "Anonymous";
 
 return m;

@@ -4,4 +4,4 @@ a = argument0;
 
 // Do Stuff
 
-a[? ACT_PT] -= 1000; // Placeholder
+a[? "action_points"] -= 1000; // Placeholder

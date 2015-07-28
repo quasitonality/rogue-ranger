@@ -4,6 +4,6 @@
 // to Tiles.
 
 // Global terrain IDs
-globalvar GRASS;
+globalvar terrain_types = ds_map_create();
 
-GRASS = terrain_create("Grass", false, true);
+terrain_types[? "grass"] = terrain_create("Grass", false, true);
