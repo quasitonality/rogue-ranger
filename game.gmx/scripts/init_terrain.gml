@@ -1,4 +1,4 @@
-///init_terrain()
+///init_features()
 
 // Initializes terrain types. Uses a flyweight design to assign terrain attributes
 // to Tiles.
